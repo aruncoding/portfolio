@@ -1,0 +1,148 @@
+@media only screen and (min-width:200px) and (max-width:902px){
+.navbar{
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+.menu ul{
+    flex-direction: column;
+}
+#burger{
+    /* display: none; */
+    position: fixed;
+    right: 2vw;
+    top: 1vw;
+    background-color: #03a9f4;
+    width: 50px;
+    height: 43px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#burger::before{
+content: '';
+position: absolute;
+width: 28px;
+height: 2px;
+background-color: #fff;
+transform: translateY(-5px);
+transition: 0.2s;
+}
+#burger::after{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(5px);
+    transition: 0.2s;
+    }
+ 
+#burger.pactive::before{
+    transform: translateY(0px) rotate(45deg);
+}    
+#burger.pactive::after{
+    transform: translateY(0px) rotate(-45deg);
+}    
+.navbar{
+    position: fixed;
+    top: 0vw;
+    left:-300px !important;
+    width: 46vw !important;
+    /* height: 100vh; */
+    background: #003147 !important;
+    transition: 0.5s !important;
+}
+.navbar.pactive{
+    left: 0px !important;
+}
+
+.abouut{
+    flex-direction: column;
+    padding: 0 12vw 6vw 12vw !important;
+}
+
+.abouut-left{
+    width: 76vw !important;
+    height: auto !important;
+    margin-right: 0 !important;
+}
+
+.abouut-right{
+    width: 80vw !important;
+}
+.bar{
+    line-height: 2.5;
+}
+.folio-menu{
+    flex-direction: column;
+}
+.folio-b{
+    flex-direction: column;
+    width: 80vw;
+    margin: auto;
+}
+.first-img{
+    width: 80vw !important;
+}
+.second-img{
+    width: 80vw !important;
+}
+.third-img{
+    width: 80vw !important;
+}
+.second-first{
+    width: 80vw !important;
+}
+.second-second{
+    width: 80vw !important;
+}
+.third-first{
+    width: 80vw !important;
+}
+.third-second{
+    width: 80vw !important;
+}
+.service-b{
+    flex-direction: column;
+}
+.service-first{
+    width: 80vw !important;
+    margin-bottom: 2vw;
+}
+.client-b{
+    flex-direction: column;
+}
+.blog-b{
+    width: 90vw !important;
+    margin-bottom: 6vw;
+}
+hr{
+    width: 90vw !important;
+}
+.contact-b{
+    flex-direction: column-reverse;
+}
+.contact-form{
+    width: 80vw !important;
+}
+#name{
+    width: 39vw !important;
+}
+#lname{
+    width: 39vw !important;
+}
+.contact-number{
+    margin-bottom: 6vw;
+}
+.foot{
+    flex-direction: column;
+}
+.foot-a{
+    margin-bottom: 6vw;
+}
+.foot-para{
+    width: 70vw !important;
+}
+}
